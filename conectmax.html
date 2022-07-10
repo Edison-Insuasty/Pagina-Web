@@ -20,7 +20,7 @@
 				<div class="col-12">
 					<br><br>
 					<center>UNIVERSIDAD DE NARIÑO EXTENSIÓN IPIALES</center>
-					<center>DESARROLLADO POR:</center>
+					<center>DESARROLLADORES</center>
 					<center> EDISON INSUASTY</center>
 					<center> CAMILO MEJIA</center>
 
@@ -400,10 +400,27 @@
 				</div>
 			</div>
 
-			<br><br><br><br>
+			<br><br>
+				<div class="container">
+					<center>
+						
+						<div class="card" style="width: 25rem;" >
+						  <img src="imagenes/Scrum.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+						   <h5 class="card-title">Utilizamos el proceso Scrum</h5>
+						   <p class="card-text">Scrum es un marco de trabajo para desarrollo ágil de software que se ha expandido a otras industrias. Es un proceso en el que se aplican de manera regular un conjunto de buenas prácticas para trabajar colaborativamente, en equipo y obtener el mejor resultado posible de proyectos</p>
+						   <a href="https://www.scrum.org" class="btn btn-primary">Conoce más sobre Scrum</a>
+				    	</div>
+				</div>	
+					</center>
+
+				</div>
+				<br><br>
+			
+
 			<div class="container">
 
-				<form class="was-validated">
+			
 
 					<div class="alert alert-primary" role="alert">
 						<center>FORMULARIO DE PETICIONES, QUEJAS, RECLAMOS Y SUGERENCIAS</center>
@@ -427,17 +444,21 @@
 
 					<input type="radio" name="txt_pqr" id="txt_pqrs">
 					<label>Sugerencia</label><br>
-					<br><br>
+					<br>
 
-					<div class="row justify-content-start">
+					
 						<!-----contenedor 1---->
-						<div class="col-12">
-							<label for="exampleInputEmail1" class="form-label">Nombre</label>
-							<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-						</div>
-					</div>
-					<br><br>
-					<div class="mb-3">
+				<div class="input-group">
+				  <span class="input-group-text">Nombre y apellido</span>
+				  <input type="text" aria-label="First name" class="form-control">
+				  <input type="text" aria-label="Last name" class="form-control">
+				</div>
+								
+					<br>
+					<div class="row justify-content-start">
+				
+						<div class="col-6">
+						<label for="exampleInputEmail1" class="form-label">Seleccione</label>
 						<select class="form-select" required aria-label="select example">
 							<option value="">Tipo de documento</option>
 							<option value="1">Cedula de ciudadania</option>
@@ -445,17 +466,33 @@
 							<option value="3">Pasaporte</option>
 							<option value="4">Otro</option>
 						</select>
+						</div>
+						<div class="col-6">
+							<label for="identificacion" class="form-label">Número de Identificación</label>
+							<input type="text" class="form-control" id="identificacion" aria-describedby="Area">
+						</div>
+
 					</div>
 					<br>
 
+
 					<div class="mb-3">
+				  		<label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+				    </div>
+					
+				
+				
+
+					<div class="mb-3">
+						 <label>Recurso fisico</label>
 						<input type="file" class="form-control" aria-label="file example" required>
-						<div class="invalid-feedback">Subir fotocopia de documento</div>
+						
 					</div>
 
 					<div class="mb-3">
 						<label for="validationTextarea" class="form-label">Descripción de solicitud</label>
-						<textarea class="form-control is-invalid" id="validationTextarea" placeholder="Area de texto" required></textarea>
+						<textarea class="form-control" id="validationTextarea" placeholder="Area de texto" required></textarea>
 						<div class="invalid-feedback">
 							Por favor haga una breve descripción de la solicitud
 						</div>
@@ -464,7 +501,7 @@
 					<div class="mb-3">
 						<button class="btn btn-primary" type="submit" disabled>Enviar</button>
 					</div>
-				</form>
+				
 			</div>
 
 
